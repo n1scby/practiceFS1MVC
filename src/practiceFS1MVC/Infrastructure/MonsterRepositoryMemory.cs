@@ -46,9 +46,9 @@ namespace Infrastructure
 
         }
 
-        public void Delete(int Id)
+        public void Delete(Monster deleteMonster)
         {
-            Monster removeMonster = GetMonsterByID(Id);
+            Monster removeMonster = GetMonsterByID(deleteMonster.Id);
             _monsterList.Remove(removeMonster);
 
         }

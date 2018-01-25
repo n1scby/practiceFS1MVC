@@ -10,6 +10,6 @@ namespace ApplicationCore
         Monster GetMonsterByID(int id);
         void Add(Monster newMonster);
         void Edit(Monster updatedMonster);
-        void Delete(int id);
+        void Delete(Monster deleteMonster);
     }
 }

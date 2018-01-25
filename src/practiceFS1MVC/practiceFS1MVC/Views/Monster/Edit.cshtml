@@ -1,0 +1,23 @@
+﻿@model ApplicationCore.Monster
+
+@{
+    ViewData["Title"] = "Edit Monster";
+    ViewData["Action"] = "Edit";
+    ViewData["Button"] = "Save";
+
+}
+
+<h2>Edit</h2>
+
+<h4>Monster</h4>
+<hr />
+
+@Html.Partial("_Edit", Model, ViewData)
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
