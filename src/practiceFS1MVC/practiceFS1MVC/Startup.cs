@@ -24,7 +24,7 @@ namespace practiceFS1MVC
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddScoped<IMonsterRepository, MonsterRepositoryMemory>();
+            services.AddScoped<IMonsterRepository, MonsterRepositoryFS>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
